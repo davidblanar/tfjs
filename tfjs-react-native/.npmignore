@@ -18,7 +18,6 @@ package-lock.json
 package/
 rollup.config.js
 scripts/
-tsconfig.json
 tslint.json
 yarn-error.log
 yarn.lock
