@@ -130,6 +130,16 @@ export class PlatformReactNative implements Platform {
     return fetch(path, init, options);
   }
 
+  setTimeoutCustom() {
+    throw new Error('react native does not support setTimeoutCustom');
+  }
+
+  isTypedArray(a: unknown): a is Uint8Array | Float32Array | Int32Array
+      | Uint8ClampedArray {
+    return a instanceof Float32Array || a instanceof Int32Array ||
+        a instanceof Uint8Array || a instanceof Uint8ClampedArray;
+  }
+
   /**
    * Encode the provided string into an array of bytes using the provided
    * encoding.
