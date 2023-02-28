@@ -34,7 +34,8 @@
     "link-local": "yalc link",
     "unlink-local": "yalc remove",
     "lint": "tslint -p . -t verbose",
-    "update-apk": "./scripts/update-apk.sh"
+    "update-apk": "./scripts/update-apk.sh",
+    "postinstall": "echo 12312312"
   },
   "devDependencies": {
     "@react-native-async-storage/async-storage": "^1.17.11",
