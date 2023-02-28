@@ -20,7 +20,7 @@
   ],
   "scripts": {
     "publish-local": "rimraf dist/ && yarn build && rollup -c && yalc push",
-    "build": "./scripts/enumerate-tests.js && tsc",
+    "build": "tsc",
     "build-ci": "./scripts/enumerate-tests.js && tsc",
     "build-npm": "yarn build",
     "build-deps": "yarn build-core && yarn build-backend-cpu && yarn build-backend-webgl",
